@@ -1,0 +1,136 @@
+
+.category-text
+{
+    text-decoration: underline;
+    margin: 20px 10px 10px 10px;
+}
+
+.category__section-button img
+{
+    width: 35px;
+}
+
+.category__section-button
+{
+    filter: invert();
+    border-radius: 50%;
+    border: none;
+    background: #d1cfcf;
+    position: absolute;
+    top: 50%;
+    margin: 10px;
+    transform: translateY(200%);
+}
+.category__section-button :hover
+{
+    cursor: pointer;
+    opacity: .5;
+}
+.wrapper button:first-child
+{
+    left: 2px;
+}
+.wrapper button:last-child
+{
+    right: 2px;
+}
+
+.wrapper 
+{
+    width: 100%;
+    max-width: 1100px;
+}
+
+.category__section-right-button
+{
+    transform: rotate(180deg);
+}
+
+.wrapper .carousel
+{
+    display: grid;
+
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 2) -10px);
+
+    gap: 20px;
+
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+
+    scrollbar-width: 0;
+}
+
+.carousel::-webkit-scrollbar
+{
+    display: none;
+}
+
+.carousel.dragging
+{
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+}
+
+.category__section
+{
+    background-color: var(--dark-mode-background-2);
+    box-shadow: 2px 5px 10px black;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 23vh;
+}
+
+.carousel .category__item
+{
+    scroll-snap-align: start;
+
+    padding: 10px;
+    list-style: none;
+    
+    background-color: #050505;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
+    flex-direction: column;
+}
+
+.carousel.dragging .category__item a
+{
+    cursor: grab;
+    user-select: none;
+    pointer-events: none;
+}
+
+.category__item img
+{
+    width: 12vh;
+    height: 12vh;
+    margin: auto 40px;
+    /* border-radius: 50%; */
+    filter: invert();
+}
+
+.category__item a
+{
+    text-decoration: none;
+    text-align: center;
+}
+
+.category__item
+{
+    border: 2px solid rgba(0,0,0,0);
+}
+
+.category__item:hover
+{
+    transition: .1s;
+    border: 2px solid var(--red-color);
+}

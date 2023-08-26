@@ -1,0 +1,50 @@
+
+@media screen and (max-width:900px) 
+{
+    .wrapper .carousel
+    {
+        grid-auto-columns: calc((100% / 2) -8px);
+    }
+}
+@media screen and (max-width:600px) 
+{
+    .wrapper .carousel
+    {
+        grid-auto-columns: 100%;
+    }
+
+    nav
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo-button
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: none;
+        margin: auto auto;
+    }
+    .logo-button:hover
+    {
+        opacity: .5;
+    }
+    .logo-button img
+    {
+        position: absolute;
+        margin: auto;
+    }
+
+    .list-2, .list-3, .map , .nav-button,  .nav-color-mode__button,  .logo
+    {   
+        display: none;
+    }
+
+    footer
+    {
+        flex-flow: column;
+    }
+}
