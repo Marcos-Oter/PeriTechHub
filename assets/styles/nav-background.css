@@ -1,25 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
-:root
-{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-family: 'Exo', sans-serif;
-    --text-color: #EEE;
-    color: var(--text-color);
-    --dark-mode-background: #222;
-    --dark-mode-background-2: #111;
-    --outline-color: #ff0800;
-    --outline-color-2: rgba(214, 49, 49, 0.5);
-    --red-color: rgb(173, 57, 57);
-    --red-color-2: rgb(148, 39, 39);
-    scroll-behavior: smooth;
-}
-
-*,html
-{
-    margin: 0;
-    padding: 0;
-    color: var(--text-color);
-}
 
 .logo
 {
@@ -68,7 +46,7 @@
 
 .nav-button
 {
-    size: 5vh 5vh;
+    size: 5vw 5vh;
     padding: 5px;
     margin: 5px;
     border-radius: 4px;
@@ -88,12 +66,12 @@
 {
     color: rgb(223, 52, 52);
     margin: auto 2px;
-    border-bottom: 1px solid var(--red-color-2);
+    /* border-bottom: 1px solid var(--red-color-2); */
     border-radius: 8px;
 }
 .background__container
 {
-    height: 35vh;
+    height: 37vh;
     background: url(../media/images/Background.webp);
     background-repeat: no-repeat;
     background-position: center;
@@ -110,7 +88,7 @@
     z-index: 1;
     position: absolute;
     width: 100%;
-    height: 35vh;
+    height: 37vh;
     background: linear-gradient(to bottom,rgba(189, 214, 49, 0.5),rgba(1,1,1,0.2));
 }
 .background__container b

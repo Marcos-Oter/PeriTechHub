@@ -18,7 +18,6 @@
     margin: auto 5px;
     filter: invert();
     transform: rotateY(180deg);
-    /*background-color: var(--text-color);*/
 }
 .products__offer
 {
@@ -27,7 +26,7 @@
     justify-content: space-evenly;
     flex-flow: row wrap;
     margin: 5vh auto;
-    width: 95%;
+    width: 100%;
 }
 .products__offer img
 {
@@ -37,13 +36,14 @@
 .products__offer img:hover
 {
     transition: .1s;
+
     box-shadow: 4px 4px 10px black;
 }
 
 .product__most-purchased
 {
     display: inline-block;
-    margin: vh auto;
+    margin: 10px auto;
 }
 
 .product__most-purchased a

@@ -1,10 +1,4 @@
 
-.category-text
-{
-    text-decoration: underline;
-    margin: 20px 10px 10px 10px;
-}
-
 .category__section-button img
 {
     width: 35px;
@@ -19,7 +13,7 @@
     position: absolute;
     top: 50%;
     margin: 10px;
-    transform: translateY(200%);
+    transform: translateY(250%); 
 }
 .category__section-button :hover
 {
@@ -111,10 +105,8 @@
 
 .category__item img
 {
-    width: 12vh;
     height: 12vh;
     margin: auto 40px;
-    /* border-radius: 50%; */
     filter: invert();
 }
 
